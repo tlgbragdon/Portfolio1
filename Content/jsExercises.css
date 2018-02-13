@@ -1,0 +1,60 @@
+body {
+	margin: 10px;
+}
+
+div.jsOnly {
+visibility:visible;
+}
+
+div.js_jq {
+   visibility:hidden;
+}
+
+h1.mainHeader {
+	font-style: italic;
+	text-align: center;
+}
+
+h1.subheading {
+	background-color: #003380;
+	color:white;
+	margin: 5px;
+	padding: 10px; 
+	text-align: center;
+}
+
+h2 {
+	color:#003d99;
+	margin: 5px;
+}
+
+input {
+	padding: 5px;
+	margin: 5px;
+
+}
+button {
+	background-color: #003d99;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.output {
+	background-color: lightgray;
+	padding: 5px;
+	margin: 5px;
+}
+p.intro {
+	font-style: italic;
+}
+
+p#valuesInput, p#valuesInputJQ {
+	font-size: larger;
+	margin: 5px;
+}
+
+p,h3 {
+	margin: 5px;
+}
+

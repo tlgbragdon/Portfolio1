@@ -109,6 +109,7 @@ fieldset[disabled] .btn-primary.active {
   border-radius: 3px;
   font-size: 18px;
   padding: 20px 40px;
+  margin-top: 40px;
 }
 .btn-xl:hover,
 .btn-xl:focus,
@@ -145,6 +146,11 @@ fieldset[disabled] .btn-xl.active {
 .btn-xl .badge {
   color: #2eb82e;
   background-color: white;
+}
+
+.checklist {
+    list-style-position :inside;
+    text-align: left;
 }
 .navbar-custom {
   background-color: #222222;
@@ -247,6 +253,7 @@ header .intro-text .intro-lead-in {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
+  text-shadow: 2px 2px 4px black;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -255,6 +262,7 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+  text-shadow: 2px 2px 4px black;  
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -554,6 +562,10 @@ section h3.section-subheading {
 aside.frameworks img {
   margin: 50px auto;
 }
+
+button.close {
+    opacity: 1.0;
+}
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
@@ -685,6 +697,12 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
+}
+
+.portfolio-modal .modal-content ul {
+  margin-bottom: 30px;
+  margin-top: 0;
+  list-style-type: none;
 }
 
 .portfolio-modal .modal-content img {

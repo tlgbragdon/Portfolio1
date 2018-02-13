@@ -24,6 +24,11 @@
     <!-- Theme CSS -->
     <link href="~/css/agency.css" rel="stylesheet">
 
+    <!-- Syntax Highlighter CSS-->
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,7 +70,7 @@
                         <a class="page-scroll" href="#connect">Connect</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#blog">Blog</a>
+                        <a class="page-scroll" href="https://tbragdon-blog.azurewebsites.net/" target="_blank">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +84,8 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Tracy Bragdon</div>
-                <div class="intro-heading">.NET Developer</div>
+                <div class="text-primary intro-heading">Full Stack <br />.NET Developer</div>
+                <div class="intro-lead-in">Handling All The Layers Of the Stack</div>
                 <a href="#portfolio" class="page-scroll btn btn-xl">View Projects</a>
             </div>
         </div>
@@ -91,8 +97,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Re-entering the software development field after 20-years of other experiences, I am excited to be returning to my first love of application development.  
-                    I am a mature, committed, individual with a strong work ethic, looking for a challenging junior .NET position in which I can learn and grow professionally. </h3>
+                    <h3 class="section-subheading text-muted">Re-entering the software development field after 20-years of other business experiences, I am excited to be returning to my first love of application development.  
+                    I am a mature, committed, individual with a strong work ethic, looking for a challenging junior .NET position in which I can contribute, learn, and grow professionally. </h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -111,7 +117,9 @@
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Technical Skills</h4>
-                    <p class="text-muted">JavaScript, jQuery, Bootstrap, C#, .NET</p>
+                    <p class="text-muted"><strong>Languages:</strong> JavaScript, jQuery,  C#, .NET</p>
+                    <p class="text-muted"><strong>Frameworks:</strong> Bootstrap, AJAX, .NET</p>
+                    <p class="text-muted"><strong>Tools:</strong> Visual Studio, Sublime, Chrome & FireFox Developer Tools</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -119,9 +127,12 @@
                         <i class="fa fa-exchange fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Contact</h4>
-                    <p class="text-muted">Contact me directly via <a href="#connect">phone</a>, <a href="mailto:tracy.bragdon@gmail.com">email</a>, or <a href="https://www.linkedin.com/in/tracybragdon" target="_blank">linkedIn</a>
-
-                    </p>
+                    <p class="text-muted">Contact me directly via:</p>
+                         
+                     <p><a href="#" data-toggle="modal" data-target="#phone" class="portfolio-link">Phone</a></p>
+                     <p><a href="mailto:tracy.bragdon@gmail.com">Email</a></p> 
+                     <p><a href="https://www.linkedin.com/in/tracybragdon" target="_blank">LinkedIn</a></p>
+                   
                 </div>
             </div>
         </div>
@@ -133,95 +144,131 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Projects</h2>
-                    <h3 class="section-subheading">Following is a sampling of various projects I've completed to date:</h3>
+                    <h3 class="section-subheading">Following is a sampling of my projects:</h3>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <!-- Financial App-->
+                <div class="col-md-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#budgeter" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="~/img/portfolio/screenshotRowingQuiz.png" class="img-responsive" alt="">
+
+                        <img src="~/img/portfolio/financials_thumb.jpg" class="img-responsive" alt="screenshot of Financial App">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>WalletMaster</h4>
+                        <p class="text-muted">Household Budgeting</p>
+                    </div>
+                </div>
+
+                <!-- Car Lister -->
+                @*<div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#carLister" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <img src="~/img/portfolio/carGarage_thumb.jpg" class="img-responsive" alt="screenshot of CarLister App" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Car Listing App</h4>
+                        <p class="text-muted">Coming Soon</p>
+                    </div>
+                </div>*@
+
+                <!-- Bug Tracker-->
+                <div class="col-md-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#bugTracker" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="~/img/portfolio/no-bugs_thumb.png" class="img-responsive" alt="screenshot of BugTracker App" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Bug Tracker</h4>
+                        <p class="text-muted">Software Bug Tracking</p>
+                    </div>
+                </div>
+
+            </div> <!-- end row -->
+            <div class="row">
+
+                <!-- Rowing Quiz -->
+                <div class="col-md-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#RowingQuiz" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="~/img/portfolio/screenshotRowingQuiz_thumb.png" class="img-responsive" alt="screenshot of Rowing Quiz game">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Rowing Quiz</h4>
-                        <p class="text-muted">Quiz game utilizing JavaScript and jQuery</p>
+                        <p class="text-muted">Game utilizing JavaScript & jQuery</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+
+                <!-- Contacts App -->
+                <div class="col-md-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#contactsApp" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="~/img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="~/img/portfolio/screenshot_ContactsApp_thumb.png" class="img-responsive" alt="screenshot of Contacts App">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Contacts App</h4>
+                        <p class="text-muted">Create & View Contacts</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+
+                <!-- JScript & Jquery Exercises-->
+                @*<div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#JSExercises" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="~/img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="~/img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="~/img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="~/img/portfolio/screenshot_JSExercises.png" class="img-responsive" alt="">
+                        <img src="~/img/portfolio/screenshot_JSExercises_thumb.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>JavaScript & jQuery Exercises</h4>
-                        <p class="text-muted">String and Number Exercises using JavaScript and jQuery</p>
+                        <p class="text-muted">String and Number Exercises</p>
+                    </div>
+                </div>*@
+
+                <!-- Hot or Cold Game -->
+                <!--
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#" data-toggle="modal" data-target="#hotCold" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="~/img/portfolio/screenshot_HotOrCold.png" class="img-responsive" alt="screenshot of Hot or Cold Game" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Hot or Cold</h4>
+                        <p class="text-muted">Number Guessing Game</p>
                     </div>
                 </div>
-            </div>
+                ! remove Hot or Cold app for now -->
+            
+            </div> <!-- end row -->
         </div>
     </section>
 
@@ -238,6 +285,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="~/img/logos/GWTM-logo.png" alt="Greatwide Truckload Management Logo">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>January 2017 - present</h4>
+                                    <h4 class="subheading">Application Developer <br />Greatwide Truckload Management</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Member of three-person development team utilizing C#, .NET, API, Javascript, JQuery, JQWidgets, and KnockoutJS. </p>
+                                </div>
+                            </div>
+                        </li>
                         <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="~/img/logos/CF-logo.png" alt="Coder Foundry Logo">
@@ -248,7 +309,7 @@
                                     <h4 class="subheading">Jr. Web Developer <br />Coder Foundry</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Enrolled in full-time, immersive, full-stack coding bootcamp for C# and .NET development.  Refer to <a href="#portfolio">projects portfolio</a> for a sampling of projects completed to date.</p>
+                                    <p class="text-muted">Enrolled in full-time, immersive, full-stack coding bootcamp for C# and .NET development.  Refer to <a href="#portfolio">projects portfolio</a> for a sampling of projects completed.</p>
                                 </div>
                             </div>
                         </li>
@@ -366,57 +427,8 @@
         </div>
     </section>
 
-    <!-- Connect Section -->
-    <section id="connect" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Let's Connect</h2>
-                    <h3 class="section-subheading text-muted">I look forward to connecting with you.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="~/img/team/profile.jpg" class="img-responsive img-circle" alt="Tracy Bragdon photo">
-                        <h4>Tracy Bragdon</h4>
-                        <p class="text-muted">Full-Stack Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li>
-                                <a> <i class="fa fa-phone" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="mailto:tracy.bragdon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/tlgbragdon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/tracybragdon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a><i class="fa fa-home" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Frameworks Aside -->
-    <aside class="frameworks">
+    <aside class="frameworks bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-sm-4">
@@ -444,22 +456,70 @@
                         <img src="~/img/logos/JavaScript.png" class="img-responsive img-centered" alt="JavaScript">
                     </a>
                 </div>
-                <div class="col-md-2 col-sm-4">
+                @*<div class="col-md-2 col-sm-4">
                     <a href="#">
-                        <img src="http://placehold.it/200x200" class="img-responsive img-centered" alt="TBD"> 
+                        <img src="http://placehold.it/200x200" class="img-responsive img-centered" alt="TBD">
                     </a>
-                </div>
+                </div>*@
             </div>
         </div>
     </aside>
 
+    <!-- Connect Section -->
+    <section id="connect">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Let's Connect</h2>
+                    <h3 class="section-subheading text-muted">I look forward to connecting with you.</h3>
+                </div>
+            </div>
+            <div class="row">
+              <!--  <div class="col-sm-4">
+
+                </div>
+                  !-->
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="team-member">
+                        <img src="~/img/team/Tracy_Bragdon.jpg" class="img-responsive img-circle" alt="Tracy Bragdon photo">
+                        <h4>Tracy Bragdon</h4>
+                        <p class="text-muted">Full-Stack Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#phone" class="portfolio-link"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:tracy.bragdon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tlgbragdon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tracybragdon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#mailing" class="portfolio-link"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               <!-- <div class="col-sm-4">
+                </div>
+                !-->
+            </div>
+          
+        </div>
+    </section>
+
+ 
+
     <!-- Blog Section -->
-    <section id="blog">
+    <section id="blog" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">My Blog</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted"><a href="https://tbragdon-blog.azurewebsites.net/" target="_blank">Visit my blog</a> to read about my coding bootcamp experience.</h3>
                 </div>
             </div>
             <div class="row">
@@ -504,221 +564,406 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; Tracy Bragdon 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#phone" class="portfolio-link"><i class="fa fa-phone" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li>
+                            <a href="mailto:tracy.bragdon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li>
+                            <a href="https://github.com/tlgbragdon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tracybragdon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mailing" class="portfolio-link"><i class="fa fa-home" aria-hidden="true"></i></a>
                         </li>
                     </ul>
+      
                 </div>
+               
                 <div class="col-md-4">
+                    <!--
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
                         </li>
                     </ul>
+                     -->
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
+    <!-- Rowing Quiz Modal -->
+    <div class="portfolio-modal modal fade" id="RowingQuiz" tabindex="-1" role="dialog" aria-labelledby="RowingQuiz" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
+
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Rowing Quiz</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="~/img/portfolio/screenshotRowingQuiz.png" alt="">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                                <h1 class="modal-title" id="myModalLabel">Rowing Quiz</h1>
+                            </div>
+                            <div class="modal-body col-sm-12">
+                                <!-- <h2>Rowing Quiz</h2> -->
+                                <p class="item-intro text-muted">Quiz game asking ten questions about rowing terminology.  For each correct question, your boat advances along the course - try and keep up with the pace boat!
+                                </p>
+                                <img class="img-responsive img-centered" src="~/img/portfolio/screenshotRowingQuiz.png" alt="Screenshot of Rowing Quiz">
+                                
                                 <p>
-                                    Quiz game asking ten questions about rowing terminology.  For each correct question, your boat advances along the course - try and keep up with the pace boat! 
+                                    Project was done for Thinkful online Front-End class utilizing javascript Objects, and jQuery.
+                                </p>
+                                <p><a href="https://tlgbragdon.github.io/RowingQuiz/" target="_blank">Try it Live</a><br />
+                                   <a href="https://github.com/tlgbragdon/RowingQuiz" target="_blank">View the source on GitHub</a>
+                                </p>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+
+                            </div>
+                            <div class="modal-footer no-margin">    
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Financial App Modal -->
+    <div class="portfolio-modal modal fade" id="budgeter" tabindex="-1" role="dialog" aria-labelledby="budgeter" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                                <h1 class="modal-title" id="myModalLabel">WalletMaster</h1>
+                            </div>
+
+                            <div class="modal-body">
+                                
+                                <p class="item-intro text-muted">
+                                    Personal Finance 
+                                </p>
+
+                                <img src="~/img/portfolio/financials.jpg" class="img-responsive img-centered" alt="image of household finances" />
+
+                                <p>
+                                   WalletMaster is a personal budgeting application. It allows multiple users to participate in a single Household.
+                                    Each household can create a budget with any number of categories.  Standard categories are provided which can be
+                                    renamed, removed, or added.  Transactions can be recorded for multiple bank accounts and expenses are tracked
+                                    across the categories.  Balance limits can be set per account and the individuals with access to the account
+                                    will be notified (via email and within the application) when the limit is reached.  
+                                 </p>
+                                <p>
+                                    WalletMaster utilizes the following methodologies and technologies:
+                                    <ul>
+                                        <li>MVC software design pattern</li>
+                                        <li>Code-First database schema</li>
+                                        <li>User Authorization through Entity Framework</li>
+                                        <li>Responsive, Bootstrap interface and HTML5</li>
+                                        <li>Provides visual charting of data</li>
+                                    </ul>
+                                </p>
+                               
+                                
+                                <p>
+                                    <a href="https://tbragdon-budgeter.azurewebsites.net" target="_blank">Try it Live</a><br />
+                                    <!--  <a href="#" target="_blank">View the source on GitHub</a>  -->
+                                </p>
+                                 
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                            <div class="modal-footer no-margin">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Lister Modal -->
+    <div class="portfolio-modal modal fade" id="carLister" tabindex="-1" role="dialog" aria-labelledby="carLister" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                                <h1 class="modal-title" id="myModalLabel">Car Lister</h1>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="item-intro text-muted">
+                                    Project Status: TBD
+                                </p>
+
+                                <img src="~/img/portfolio/carGarage.jpg" class="img-responsive img-centered"  alt="screenshot of Car Lister App">
+
+                                <p>
+                                    Coming Soon!
+                                </p>
+
+                                 <!--
+                                <p>
+                                <a href="#" target="_blank">Try it Live</a><br />
+                                <a href="#" target="_blank">View the source on GitHub</a>
+                                </p>
+                                 -->
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                            <div class="modal-footer no-margin">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contacts App -->
+    <div class="portfolio-modal modal fade" id="contactsApp" tabindex="-1" role="dialog" aria-labelledby="contactsApp" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                                <h1 class="modal-title" id="myModalLabel">Contacts App</h1>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="item-intro text-muted">
+                                    Create and store contact info.  Contacts may have mutiple addresses and phone numbers.
+                                </p>
+
+                                <img src="~/img/portfolio/screenshot_ContactsApp.png" class="img-responsive img-centered" alt="TBD" />
+
+                                <p>
+                                    Basic app to create and view a list of contacts.  A list of all contacts appear alphabetically at the bottom.  
+                                    A detailed view of the selected contact is displayed in the right column.
+
                                 </p>
                                 <p>
-                                    Project was done for Thnkful online Front-End class utilizing javascript Objects, and jQuery.
+                                    Javascript objects used to store phone, address, and contact information.
+                                    jQUery used for DOM manipulation.  Bootstrap utilized for responsive layout.
                                 </p>
-                                <ul class="list-inline">
-                                    <li>Date: August 2016</li>
-                                    <li>GitHub: <a href="https://tlgbragdon.github.io/RowingQuiz/" target="_blank">https://tlgbragdon.github.io/RowingQuiz/</a></li>
-                                    <li>Category: Front-End</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="~/img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="~/img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="~/img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="~/img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>JavaScript & jQuery Exercises</h2>
-                                <p class="item-intro text-muted">String and Number Exercises in both Javacript and jQuery</p>
-                                <img class="img-responsive img-centered" src="~/img/portfolio/screenshot_JSExercises.png" alt="screenshot of Javascript Exercises">
-                                <p>Functions include:
-                                <ul class="list-block">
-                                    <li>For list of numbers input by user, find the least, greatest, mean, sum, and product.</li>
-                                    <li>Calculate factorial of number provided by user.</li>
-                                    <li>Fizz Buzz using two factors provided by user.</li>
-                                    <li>Determine if a string provided by the user is a palindrome or not.</li>
-                                </ul>
+                                <p>
+                                <a href="https://tlgbragdon.github.io/ContactsApp/" target="_blank">Try it Live</a><br />
+                                <a href="https://github.com/tlgbragdon/ContactsApp" target="_blank">View the source on GitHub</a>
                                 </p>
-                                <p><a href="https://github.com/tlgbragdon/JavaScriptExercises" target="_blank">View the code on github.</a> </p>
+
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
+                            <div class="modal-footer no-margin">
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- BugTracker -->
+    <div class="portfolio-modal modal fade" id="bugTracker" tabindex="-1" role="dialog" aria-labelledby="bugTracker" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                                <h1 class="modal-title" id="myModalLabel">Bug Tracker</h1>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="item-intro text-muted">
+                                    Software bug tracking tool
+                                </p>
+
+                                <img src="~/img/portfolio/bugtracker-screenshot.png" class="img-responsive img-centered" alt="screenshot of BugTracker Ticket info" />
+
+                                <p>BugTracker allows for creation, assignment, and tracking of software tickets.  Users are assigned roles (Administrator, Project Manager, Developer, 
+                                and/or Submitter) which determines what capabilities and information that user has access to. A user may have more than one role. Any number of 
+                                projects may be created. Tickets may include file attachments and comments.  Email notifications are provided to affected users when a ticket is assigned or updated.
+                                A history of ticket changes is also captured.
+                                </p>
+                                <p>BugTracker utilizes the following methodologies and technologies:
+                                    <ul>
+                                        <li>Code-First database schema</li>
+                                        <li>MVC software design pattern</li>
+                                        <li>User and Role Authentication and Authorization through Entity Framework</li>
+                                        <li>Responsive, Bootstrap interface and HTML5</li>
+                                        <li>Sends notifications via email</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <a href="https://tbragdon-bugtracker.azurewebsites.net" target="_blank">Try it Live</a><br />
+                                    <a href="https://github.com/tlgbragdon/BugTracker" target="_blank">View the source on GitHub</a> 
+                                </p>
+                                
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                            <div class="modal-footer no-margin">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Exercises -->
+    <div class="portfolio-modal modal fade" id="JSExercises" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                                <h1 class="modal-title" id="myModalLabel">Javascript & jQuery Exercises</h1>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="item-intro text-muted">
+                                    Several beginner-level number and string exercises in both JavaScript and jQuery
+                                </p>
+                                <img class="img-responsive img-centered" src="~/img/portfolio/screenshot_JSExercises.png" alt="JavaScript and jQuery Exercises">
+
+                                <p>
+                                   Four exercises completed using JavaScript only and the same exercises completed also utilitizing jQuery.
+                                   This was a small project completed in the first week of the CoderFoundry course.   
+                                </p>
+                                <p>
+                                <ul> Exercises are:
+                                    <li>For series of numbers provided by the user, report the least, greatest, sum, mean, and product.</li>
+                                    <li>For a number specified by the user, calculate the factorial.</li>
+                                    <li>Generate Fizz Buzz for numbers from 1-100 based on divisors provided by user.</li>
+                                    <li>Test if string provided by the user is a palindrome or not.</li>
+                                </ul>   
+                                    
+                                </p>
+                                <p>
+                                <!--<a href="https://tlgbragdon.github.io/JavaScriptExercises/" target="_blank">Try it Live</a><br /> -->
+
+                                <a href="~/Content/JSExercises.html" target="_blank">Try it Live</a><br /> 
+                                <a href="https://github.com/tlgbragdon/JavaScriptExercises" target="_blank">View the source on GitHub</a>
+                                </p>
+
+                                <h3>Code Sample:</h3>
+                                <pre class="brush:js">
+    // output factorial of provided input
+	function factorialJQ () {
+		var num = $("#factorialInputJQ").val();
+		var factorial = 1;
+		if (isNaN(num) || num &lt 0) {
+            $("#factorialOutputJQ").text("Not a valid positive number, try again.");
+        }
+		// 0! is a special case
+		else {
+			if (Number(num) === 0)  
+				{ factorial = 1;}  
+			else {
+				for (var i=Number(num); i>0; i--) {
+					factorial = factorial * i;
+				}
+			};
+			$("#factorialOutputJQ").text(num + "! = " + factorial);
+		};
+		// clear input
+		$("#factorialInputJQ").val("");
+	}
+
+    </pre>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                            <div class="modal-footer no-margin">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phone Modal-->
+    <div class="modal fade" id="phone" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                    <h4 class="modal-title">Mobile Phone</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p> 603-477-8461 </p>
+
+                    <p><a href="tel:603-477-8461">Call Tracy</a></p>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!--Mailing Info Modal-->
+    <div class="modal fade" id="mailing" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"><i class="fa fa-times-circle text-primary" aria-hidden="true"></i></button>
+                    <h4 class="modal-title">Mailing Address</h4>
+                  
+                </div>
+                <div class="modal-body">
+                    <address>
+                        Tracy Bragdon<br />
+                        140 Blackberry Ln <br />
+                        Mooresville, NC 28115
+                    </address>
+                </div>
+                
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
     <!-- jQuery -->
     <script src="~/vendor/jquery/jquery.min.js"></script>
@@ -735,6 +980,12 @@
 
     <!-- Theme JavaScript -->
     <script src="~/js/agency.min.js"></script>
+
+    <!-- Syntax Highlighter-->
+    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script>SyntaxHighlighter.all();  //initiates syntaxHighlighter
+    </script>
 
 </body>
 
